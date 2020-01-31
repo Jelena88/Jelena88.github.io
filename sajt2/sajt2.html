@@ -30,12 +30,12 @@
                 <p>Earum officia cupiditate quisquam labore cum dicta recusandae,
                     veniam consectetur nesciunt fugiat, velit rem quis, totam saepe deleniti ducimus accusantium quidem
                     accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, earum esse libero
-                    reiciendis neque dicta mollitia optio ad enim. <br><br> Modi deleniti porro consequatur maiores
-                    dolore
+                    reiciendis neque dicta mollitia optio ad enim. </p>
+
+                <p>Modi deleniti porro consequatur maiores dolore
                     officia velit odio, error quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, earum
                     suscipit porro minima reprehenderit libero quasi cupiditate non mollitia, dolorum aut ipsam
-                    similique
-                    quod quos assumenda sint expedita nisi dolorem. Lorem ipsum dolor sit amet.</p>
+                    similique quod quos assumenda sint expedita nisi dolorem. Lorem ipsum dolor sit amet.</p>
                 <button class="buttonStyle">Learn More</button>
             </div>
         </section>
@@ -48,10 +48,10 @@
                 <h2>Lorem ipsum dolor sit </h2>
                 <p> Cupiditate quisquam labore cum dicta recusandae, veniam
                     consectetur nesciunt fugiat, velit rem quis, totam saepe deleniti ducimus accusantium quidem
-                    accusamus.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, earum esse libero reiciendis
-                    neque
-                    dicta mollitia optio ad enim. <br><br> Modi deleniti porro consequatur maiores dolore officia velit
+                    accusamus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, earum esse libero
+                    reiciendis neque dicta mollitia optio ad enim. </p>
+
+                <p> Modi deleniti porro consequatur maiores dolore officia velit
                     odio, error quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, earum suscipit porro
                     minima reprehenderit libero quasi cupiditate non mollitia, dolorum aut ipsam similique quod quos
                     assumenda sint expedita nisi dolorem. Lorem ipsum dolor sit amet.</p>
@@ -66,7 +66,7 @@
                 <div class="col" id="col1">
                     <div>
                         <img class="borderimg" src="Jelena Stojanovic - pic03.jpg" alt="">
-                    </div><br> <br>
+                    </div><br> 
                     <p> Lorem ipsum dolor sit dolor sit amet consectetur adipisicing elit. Beatae in
                         accusamus facere ex quisquam dolor suscipit.
                     </p>
@@ -76,7 +76,7 @@
                 <div class="col">
                     <div>
                         <img class="borderimg" src="Jelena Stojanovic - pic04.jpg" alt="">
-                    </div><br> <br>
+                    </div><br> 
                     <p> Lorem ipsum dolor sit amet consectetur dolor sit adipisicing elit. Beatae in
                         accusamus facere ex quisquam dolor suscipit.
                     </p>
@@ -86,7 +86,7 @@
                 <div class="col" id="col3">
                     <div>
                         <img class="borderimg" src="Jelena Stojanovic - pic05.jpg" alt="">
-                    </div> <br> <br>
+                    </div> <br> 
                     <p>Lorem ipsum dolor sit amet consectetur dolor sit adipisicing elit. Beatae in
                         accusamus facere ex quisquam dolor suscipit.
                     </p>
@@ -99,10 +99,10 @@
 
     <footer>
         <div id="icons">
-            <i class="fa fa-facebook fa-2x"></i>
-            <i class="fa fa-twitter fa-2x"></i>
-            <i class="fa fa-instagram fa-2x"></i>
-            <i class="fa fa-pinterest-p fa-2x"></i>
+            <div class="iconsborder"> <i class="fa fa-facebook fa-2x"></i> </div>
+            <div class="iconsborder"> <i class="fa fa-twitter fa-2x"></i></div>
+            <div class="iconsborder"> <i class="fa fa-instagram fa-2x"></i></div>
+            <div class="iconsborder"> <i class="fa fa-pinterest-p fa-2x"></i></div>
         </div>
         <p>&copy; Untitled. All rights reserved. Design: <strong>TEMPLATED</strong> Images: <strong>Unsplash</strong>
         </p>
@@ -113,6 +113,7 @@
     body {
         margin: 0;
     }
+
     #hdr {
         color: white;
         height: 100vh;
@@ -127,6 +128,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     #hdr>p {
         width: 65vw;
         padding: 40px 10px 40px 10px;
@@ -134,10 +136,12 @@
         line-height: 1.5;
         font-size: 18px;
     }
+
     h1 {
         margin: 0px;
         font-size: 40px;
     }
+
     .buttonStyle {
         font-weight: bold;
         border: none;
@@ -149,6 +153,7 @@
         border-radius: 2px;
         background-color: rgb(72, 145, 255);
     }
+
     .section1 {
         width: 100%;
         padding-bottom: 10%;
@@ -156,7 +161,7 @@
         background-color: rgb(238, 238, 238);
     }
     .borderimg {
-        border: solid rgb(0, 0, 0) 1px;
+        border: solid rgba(102, 102, 102, 0.527) 1px;
         border-radius: 100%;
         padding: 5px;
     }
@@ -192,7 +197,7 @@
         background-color: rgb(72, 145, 255);
     }
     .borderimg2 {
-        border: solid rgb(255, 255, 255) 1px;
+        border: solid rgba(219, 239, 253, 0.637) 1px;
         border-radius: 100%;
         padding: 5px;
     }
@@ -242,53 +247,76 @@
     }
     i {
         opacity: 30%;
-        padding: 1%;
+        border: solid rgb(68, 68, 68) 1px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        padding: 5px;
     }
     #icons {
         display: flex;
         justify-content: center;
         padding-top: 7%;
     }
-    @media only screen and (max-width: 400px) {
+
+    .iconsborder {
+        padding: 1%;
+    }
+    @media only screen and (max-width: 940px) {
         .section1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;   
+        }
+
+        #section2 {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .borderimg {
-            width: 200px;
-            height: 200px;
-       }
-        .imgdiv {
-            width: 200px;
-            padding: 0;
-            padding-top: 20px;
-        }
+
         .parag {
             line-height: 1.5;
             color: rgb(99, 99, 99);
             padding: 10px;
             text-align: center;
         }
-        #section2 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .borderimg2 {
-            width: 200px;
-            height: 200px;
-        }
-        #imgdiv2 {
-            width: 200px;
+
+        .imgdiv {
+
             padding: 0;
-            padding-top: 20px;
+            padding-top: 40px;
+
         }
+
         .parag2 {
             line-height: 1.5;
             color: rgb(223, 223, 223);
             padding: 10px;
             text-align: center;
+        }
+
+        #imgdiv2 {
+
+            padding: 0;
+            padding-top: 40px;
+        }
+
+        @media only screen and (max-width: 450px) {
+            .borderimg {
+                width: 250px;
+                height: 250px;
+            }
+
+
+
+            .borderimg2 {
+                width: 250px;
+                height: 250px;
+            }
+
+
+
         }
     }
 </style>
