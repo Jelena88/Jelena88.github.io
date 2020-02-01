@@ -1,0 +1,518 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0px auto;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#main1 {
+  background-image: url('bg1.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  position: center;  
+  max-width: 1366px;
+  }
+  #main2 {
+  background-image: url('bg3.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: center;   
+  max-width: 1366px;
+}
+#main3 {
+    background-image: url('bg3.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: center;   
+  max-width: 1366px;
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+#slikaMenu {
+    padding-top: 1%;
+        width: 100%;
+        height: auto;
+    }
+.nav li {
+    display: inline-block;
+    font-size: 2vw;
+    padding: 10px;  
+  }
+ .nav a{  color: rgb(168, 209, 129);
+    text-decoration: none;
+}
+#conTitle {
+padding-top: 10%;
+display: flex;
+flex-direction: column;
+width: 40%;
+float: right;
+} 
+#conPasus2 {
+    width: 42%;
+    margin-top: 65vw;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    background-color: rgba(32, 32, 32, 0.692);
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;   
+  }
+
+.logo {
+    width: 38%;
+  height: auto;
+ }
+.pasus1 { font-size:3vw; 
+    color: rgb(168, 209, 129);
+}
+.pasus2 {font-size:2vw;  
+    color: rgb(168, 209, 129);
+    margin: 0px; 
+}
+.pasus10 {
+    color: rgb(168, 209, 129);
+    margin: 0px;
+    font-size:1.5vw;
+}
+.pasus11 {
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    font-size:1.3vw;
+    padding-top: 1vw;
+}
+.pasus4 {font-size:20px;  
+    color: rgb(168, 209, 129);
+    padding-top: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.pasus7 {font-size:20px;  
+    color: rgb(168, 209, 129);
+    padding-top: 2%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.pasus9 { font-size:22px;
+    padding: 0;
+    margin: 0;
+}
+.pasus8{
+    font-size: 26px;
+    color: rgb(168, 209, 129);
+    padding-bottom:0px;
+    margin-bottom:0px;
+}
+.pasus3 {
+    font-size:1.5vw;
+}
+.pasus6 {
+    font-size:15px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+#footer1 {
+    width: 100%;
+    height: auto;     
+    display: flex;
+    background-color:
+    rgba(58, 71, 35, 0.877);
+}
+#footer1 > div {
+    padding-top: 1.5vw;
+    padding-bottom: 3vw;
+    width: 28%;
+    text-align: center;
+    margin: 0 auto;
+}
+.slike {
+    width: 1vw;
+    height: auto;
+}
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto;
+  background-color:
+  rgba(58, 71, 35, 0.877);
+ width: 1080px;
+ text-align: center;
+ margin: 0 auto;
+}
+#titleMenu {
+    width: 1080px;
+    text-align: center;
+    background-color:
+    rgba(58, 71, 35, 0.877);
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 100px;
+    padding-top: 5px;
+
+}
+#contact {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 40px;   
+}
+.grid-item {
+    width: 270px;
+   height: 274px;
+ padding: 0px;
+    font-size: 30px;
+    text-align: center;
+   
+}
+
+#footer2 {
+    width: 100%;
+    height: auto;
+     
+    text-align: center;
+    background-color:
+    rgba(58, 71, 35, 0.877);
+padding: 0px 0px 20px 0px;
+margin-top: 20px;
+
+}
+
+#footer2 > p {
+    width: 60%;
+   margin: 0 auto;
+   
+   
+}
+
+
+
+input{
+    background-color: rgb(32, 32, 32);
+    border-radius: 6px;
+    border: white solid 1.5px;
+    height: 29px;
+    width: 200px;
+    color: white;
+    
+   
+}
+
+select, button {
+    background-color: rgb(32, 32, 32);
+    border-radius: 6px;
+    border: white solid 1.5px;
+    height: 34px;
+    width: 200px;
+    color: white;
+  
+  
+
+}
+ ::placeholder {padding-left:5px;}
+
+ label {
+     display: block;
+     margin-top: 20px;
+
+ }
+
+ #sectionBook > div {
+     display: inline-block;
+     padding-left: 4vw;
+    padding-right: 4vw;
+     
+    
+ }
+
+ #sectionBook {
+     width: 90%;
+     margin: 0px auto;
+     text-align: center;
+     padding-bottom: 3%;
+ }
+
+ button {
+    margin-top: 40px;
+ }
+ 
+ 
+
+.icons {
+    padding: 20px 5px;
+}
+ 
+ #footer3 { 
+    width: 100%;
+    height: auto;
+     
+    text-align: center;
+    background-color:
+    rgba(58, 71, 35, 0.877);
+padding: 10px 0px 20px 0px;
+display: flex;
+  font-size: 1.3vw;
+
+
+
+ }
+
+ #footer3 > div {display: flex;
+  justify-content: center; 
+    width: 100%;
+    margin: 0 auto;
+    text-align: start;
+
+}
+ #ullista > ul {
+    list-style-type: none;
+    text-align: start;
+   
+    
+ }
+
+ #ullista {display: flex;
+   }
+ #footer3 > div > p {
+     
+width: 30%;
+
+     padding-right: 10%;
+     
+ }
+
+
+input::-webkit-inner-spin-button {
+    display: none;
+    
+}
+
+
+
+@media (max-width: 1080px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+      background-color:
+      rgba(58, 71, 35, 0.877);    
+     width: 680px;    
+     text-align: center;
+     margin: 0 auto;    
+    }
+    .nav li {
+        display: inline-block; 
+        padding: 10px;  
+      }
+    #titleMenu {
+        width: 680px;
+        padding-bottom: 70px;
+    }
+
+    .grid-item > img {
+        width: 170px;
+        height: 173;
+    }
+    .grid-item {
+        width: 170px;
+       height: 173px;
+        font-size: 10px;
+            }    
+    .pasus4 {font-size:16px;  
+            color: rgb(168, 209, 129);
+            padding-top: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 0px;        
+    }
+    .pasus6 {
+        font-size:12px;
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+    .pasus9 { font-size:16px;
+        padding: 0;
+        margin: 0;
+    }   
+    .pasus8{
+        font-size: 20px;
+        color: rgb(168, 209, 129);
+        padding-bottom:0px;
+        margin-bottom:0px;
+    }
+
+    #conPasus2 {
+       
+        margin-top: 64vw;
+      
+     
+        padding: 10px;
+     
+      }
+    }
+
+
+    @media (max-width: 700px) {
+        .grid-container {
+        grid-template-columns: auto auto auto auto;        
+        width: 520px;        
+        }
+      
+        .nav li {
+             font-size: 16px;
+            text-shadow: -1px 0 rgb(54, 54, 54), 0 1px rgb(54, 54, 54), 1px 0 rgb(54, 54, 54), 0 -1px rgb(54, 54, 54);
+                  }
+        #titleMenu {
+            width: 520px;     
+       
+            margin-top: 10px;
+            padding-bottom: 70px;
+            padding-top: 5px;
+        
+        }
+    
+        .grid-item > img {
+            width: 130px;
+            height: 132;
+        }
+        .grid-item {
+            width: 130px;
+           height: 132px;
+         padding: 0px;
+            font-size: 10px;
+            text-align: center;
+        display: flex;
+    flex-direction: column;
+   align-items: center;
+justify-content: center;
+
+
+}
+    
+    
+#conPasus2 {
+       
+    margin-top: 61vw;
+  
+ 
+    padding: 10px;
+ 
+  }
+    
+            .pasus4 {font-size:16px;  
+                color: rgb(168, 209, 129);
+                padding-top: 6px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 0px;
+                margin: 0px;
+                
+            
+            
+        }
+
+    
+        .pasus6 {
+            font-size:12px;
+            padding-top: 0px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+        }
+        .pasus9 { font-size:16px;
+            padding: 0;
+            margin: 0;
+        }
+        
+        
+        .pasus8{
+            font-size: 20px;
+            color: rgb(168, 209, 129);
+            padding-bottom:0px;
+            margin-bottom:0px;
+            
+        }
+    
+        #footer2 > p {
+            width: 80%;
+           margin: 0 auto;
+           font-size: 1.8vw;
+           padding-top: none;
+           
+        }
+
+        .pasus7 {
+            padding-top: 4%;
+            
+        }
+
+        #contact {
+            text-align: center;
+            width: 80%;
+            height: auto;
+            margin: 0px auto;
+            margin-top: 10px;
+            font-size: 2.2vw;
+            
+        }
+
+        .icons {
+            width: 8vw;
+        }
+    
+        }
+
+
+    
+
+
+
+
+@media (max-width: 520px) {
+    .grid-container { 
+      grid-template-columns: auto auto;
+      width: 260px;
+    }
+    #titleMenu {
+        width: 260px;          
+    }
+
+    .nav {
+       
+        justify-content: center;
+     
+        padding: 0px;
+        padding-top: 15px;
+      
+    }
+.paragraf {
+    padding: 0;
+    margin: 0;
+}
+
+#conPasus2 {
+       
+    margin-top: 58vw;
+  
+ 
+    padding: 10px;
+ 
+  }
+
+}
