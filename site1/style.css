@@ -5,39 +5,25 @@ body {
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#main1 {
-  background-image: url('bg1.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0px auto;
-  padding: 0px;
-  position: center;  
-  max-width: 1366px;
-  }
-  #main2 {
+  #main3, #main2, #main1 {
   background-image: url('bg3.png');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0px;
   padding: 0px;
-  position: center;   
+  margin: 0px auto; 
   max-width: 1366px;
 }
-#main3 {
-    background-image: url('bg3.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0px;
-  padding: 0px;
-  position: center;   
-  max-width: 1366px;
-}
+/* Home page */
+#main1 {
+    background-image: url('bg1.png');}
 .nav {
     display: flex;
     justify-content: flex-end;
     margin: 0px;
     padding-top: 15px;
     padding-right: 15px;
+    
 }
 #slikaMenu {
     padding-top: 1%;
@@ -47,10 +33,10 @@ body {
 .nav li {
     display: inline-block;
     font-size: 2vw;
-    padding: 10px;  
+    padding: 10px;     
   }
  .nav a{  color: rgb(168, 209, 129);
-    text-decoration: none;
+    text-decoration: none;  
 }
 #conTitle {
 padding-top: 10%;
@@ -59,42 +45,31 @@ flex-direction: column;
 width: 40%;
 float: right;
 } 
-
-
 #newMenuAll {
     background-color: rgb(32, 32, 32);
 }
-#newMenu {
-    
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+#newMenu {    
+display: flex;
+width: 100%;
+justify-content: space-around;
 margin: 0;
 padding-bottom: 3%;
-
 }
 #newMenuAll > p {
     text-align: center;
     font-size: 20px;
     padding: 2%;
-    margin: 0;
-    
+    margin: 0;    
 }
 .newMenuTxt {
-    background: rgb(255, 255, 255);
-
+background: rgb(255, 255, 255);
 color: black;
 width: 300px;
-
-
-
 }
-
 .newMenuTxt p {
     padding: 5%;
     margin: 0;
 }
-
 .newMenuTxt img {
     width: 300px;
 }
@@ -108,20 +83,19 @@ width: 300px;
     padding: 10px;
     text-align: center;   
   }
-
 .logo {
     width: 38%;
   height: auto;
- }
-
- 
+ } 
+ /* what we cook pasus */
 .pasus1 { font-size:3vw; 
     color: rgb(168, 209, 129);
 }
-.pasus2 {font-size:2vw;  
+.pasus2 {font-size:2.2vw;  
     color: rgb(168, 209, 129);
     margin: 0px; 
 }
+/* footer1 text */
 .pasus10 {
     color: rgb(168, 209, 129);
     margin: 0px;
@@ -133,6 +107,7 @@ width: 300px;
     font-size:1.3vw;
     padding-top: 1vw;
 }
+/* menu text grid */
 .pasus4 {font-size:20px;  
     color: rgb(168, 209, 129);
     padding-top: 32px;
@@ -140,9 +115,16 @@ width: 300px;
     padding-right: 10px;
     padding-bottom: 10px;
 }
+/* footer2 text */
 .pasus7 {font-size:20px;  
     color: rgb(168, 209, 129);
     padding-top: 2%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;}
+.pasus6 {
+    font-size:15px;
+    padding-top: 0px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
@@ -158,14 +140,7 @@ width: 300px;
     margin-bottom:0px;
 }
 .pasus3 {
-    font-size:1.5vw;
-}
-.pasus6 {
-    font-size:15px;
-    padding-top: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    font-size:1.7vw;
 }
 #footer1 {
     width: 100%;
@@ -188,7 +163,7 @@ width: 300px;
 .grid-container {
 display: grid;
 grid-template-columns: auto auto auto auto;
-  background-color:
+background-color:
   rgba(58, 71, 35, 0.877);
  width: 1080px;
  text-align: center;
@@ -204,7 +179,6 @@ grid-template-columns: auto auto auto auto;
     margin-top: 10px;
     padding-bottom: 100px;
     padding-top: 5px;
-
 }
 #contact {
     text-align: center;
@@ -214,46 +188,34 @@ grid-template-columns: auto auto auto auto;
     margin-top: 40px;   
 }
 .grid-item {
-    width: 270px;
-   height: 274px;
- padding: 0px;
-    font-size: 30px;
-    text-align: center;
-   
+width: 270px;
+height: 274px;
+padding: 0px;
+font-size: 30px;
+text-align: center;  
 }
 
 #footer2 {
     width: 100%;
     height: auto;
-     
     text-align: center;
     background-color:
     rgba(58, 71, 35, 0.877);
 padding: 0px 0px 20px 0px;
 margin-top: 20px;
-
 }
-
 #footer2 > p {
     width: 60%;
-   margin: 0 auto;
-   
-   
+   margin: 0 auto;  
 }
-
-
-
 input{
     background-color: rgb(32, 32, 32);
     border-radius: 6px;
     border: white solid 1.5px;
     height: 29px;
     width: 200px;
-    color: white;
-    
-   
+    color: white;   
 }
-
 select, button {
     background-color: rgb(32, 32, 32);
     border-radius: 6px;
@@ -261,99 +223,61 @@ select, button {
     height: 34px;
     width: 200px;
     color: white;
-  
-  
-
 }
  ::placeholder {padding-left:5px;}
-
  label {
      display: block;
      margin-top: 20px;
-
  }
-
  #sectionBook > div {
      display: inline-block;
      padding-left: 4vw;
-    padding-right: 4vw;
-     
-    
+    padding-right: 4vw;    
  }
-
  #sectionBook {
      width: 90%;
      margin: 0px auto;
      text-align: center;
      padding-bottom: 3%;
  }
-
  button {
     margin-top: 40px;
- }
- 
- 
-
+ } 
 .icons {
     padding: 20px 5px;
-}
- 
+} 
  #footer3 { 
     width: 100%;
-    height: auto;
-     
+    height: auto;     
     text-align: center;
     background-color:
     rgba(58, 71, 35, 0.877);
-padding: 10px 0px 20px 0px;
-display: flex;
-  font-size: 1.3vw;
-
-
-
+    padding: 10px 0px 20px 0px;
+    display: flex;
+    font-size: 1.3vw;
  }
-
- #footer3 > div {display: flex;
-  justify-content: center; 
-    width: 100%;
+ #footer3 > div {
+    display: flex;
+    justify-content: center;    
     margin: 0 auto;
     text-align: start;
-
 }
  #ullista > ul {
     list-style-type: none;
-    text-align: start;
-   
-    
+    text-align: start;   
  }
-
  #ullista {display: flex;
    }
- #footer3 > div > p {
-     
-width: 30%;
-
-     padding-right: 10%;
-     
+ #footer3 > div > p {     
+    width: 30%;
+    padding-right: 10%;     
  }
-
-
 input::-webkit-inner-spin-button {
-    display: none;
-    
+    display: none;    
 }
-
-
-
 @media (max-width: 1080px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-      background-color:
-      rgba(58, 71, 35, 0.877);    
-     width: 680px;    
-     text-align: center;
-     margin: 0 auto;    
+    .grid-container {          
+     width: 680px;            
     }
     .nav li {
         display: inline-block; 
@@ -363,7 +287,6 @@ input::-webkit-inner-spin-button {
         width: 680px;
         padding-bottom: 70px;
     }
-
     .grid-item > img {
         width: 170px;
         height: 173;
@@ -374,251 +297,149 @@ input::-webkit-inner-spin-button {
         font-size: 10px;
             }    
     .pasus4 {font-size:16px;  
-            color: rgb(168, 209, 129);
-            padding-top: 15px;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-top: 15px;        
             padding-bottom: 0px;        
     }
     .pasus6 {
         font-size:12px;
-        padding-top: 0px;
-        padding-left: 10px;
-        padding-right: 10px;
         padding-bottom: 10px;
     }
-    .pasus9 { font-size:16px;
-        padding: 0;
-        margin: 0;
+    .pasus9 {
+        font-size:16px;      
     }   
     .pasus8{
-        font-size: 20px;
-        color: rgb(168, 209, 129);
-        padding-bottom:0px;
-        margin-bottom:0px;
+        font-size: 20px;     
     }
-
-    #conPasus2 {
-       
-        margin-top: 64vw;
-      
-     
-        padding: 10px;
-     
+    #conPasus2 {       
+        margin-top: 64vw;     
+        padding: 10px;     
       }
-
-      #newMenuAll > p {
-     
-        font-size: 18px;
-      
-        
+      #newMenuAll > p {     
+        font-size: 18px;       
     }
-    .newMenuTxt {
-   
-
-  
-    width: 220px;
-    
-    
-    }
-    
+    .newMenuTxt {  
+    width: 220px;    
+    }    
     .newMenuTxt img {
         width: 220px;
     }
     }
-
-
     @media (max-width: 700px) {
         .grid-container {
         grid-template-columns: auto auto auto auto;        
         width: 520px;        
-        }
-      
+        }      
         .nav li {
              font-size: 16px;
             text-shadow: -1px 0 rgb(54, 54, 54), 0 1px rgb(54, 54, 54), 1px 0 rgb(54, 54, 54), 0 -1px rgb(54, 54, 54);
                   }
         #titleMenu {
-            width: 520px;     
-       
+            width: 520px;            
             margin-top: 10px;
             padding-bottom: 70px;
-            padding-top: 5px;
-        
-        }
-    
+            padding-top: 5px;        
+        }    
         .grid-item > img {
             width: 130px;
             height: 132;
         }
         .grid-item {
             width: 130px;
-           height: 132px;
-         padding: 0px;
+            height: 132px;
+            padding: 0px;
             font-size: 10px;
             text-align: center;
-        display: flex;
-    flex-direction: column;
-   align-items: center;
-justify-content: center;
-
-
-}
-    
-    
-#conPasus2 {
-       
-    margin-top: 61vw;
-  
- 
-    padding: 10px;
- 
-  }
-    
-            .pasus4 {font-size:16px;  
-                color: rgb(168, 209, 129);
-                padding-top: 6px;
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-bottom: 0px;
-                margin: 0px;
-                
-            
-            
-        }
-
-    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            }    
+        #conPasus2 {      
+            margin-top: 61vw; 
+            padding: 10px; 
+        }    
+        .pasus4 {font-size:16px;          
+            padding-top: 6px;        
+            padding-bottom: 0px;
+            margin: 0px;            
+        }    
         .pasus6 {
-            font-size:12px;
-            padding-top: 0px;
-            padding-left: 10px;
-            padding-right: 10px;
+            font-size:12px;       
             padding-bottom: 0px;
         }
         .pasus9 { font-size:16px;
-            padding: 0;
-            margin: 0;
-        }
-        
-        
+        }        
         .pasus8{
-            font-size: 20px;
-            color: rgb(168, 209, 129);
-            padding-bottom:0px;
-            margin-bottom:0px;
-            
-        }
-    
+            font-size: 20px;           
+        }    
         #footer2 > p {
             width: 80%;
            margin: 0 auto;
            font-size: 1.8vw;
-           padding-top: none;
-           
+           padding-top: none;           
         }
-
         .pasus7 {
-            padding-top: 4%;
-            
+            padding-top: 4%;            
         }
-
         #contact {
             text-align: center;
             width: 80%;
             height: auto;
             margin: 0px auto;
             margin-top: 10px;
-            font-size: 2.2vw;
-            
+            font-size: 2.2vw;            
         }
-
         .icons {
             width: 8vw;
         }
-        #newMenuAll > p {
-     
-            font-size: 16px;
-          
-            
+        #newMenuAll > p {     
+            font-size: 16px;           
         }
-        .newMenuTxt {
-       
-    
-      
-        width: 170px;
-        
-        
-        }
-        
+        .newMenuTxt {     
+        width: 170px;        
+        }        
         .newMenuTxt img {
             width: 170px;
         }
-
         #newMenuAll p {
             font-size: 10px;
         }
         }
-    
-        
-
-
-    
-
-
-
-
-@media (max-width: 520px) {
-    .grid-container { 
-      grid-template-columns: auto auto;
-      width: 260px;
-    }
-    #titleMenu {
-        width: 260px;          
-    }
-
-    .nav {
-       
-        justify-content: center;
-     
-        padding: 0px;
-        padding-top: 15px;
-      
-    }
-.paragraf {
-    padding: 0;
-    margin: 0;
-}
-
-#conPasus2 {
-       
-    margin-top: 58vw;
-  
- 
-    padding: 10px;
- 
-  }
-
-  #newMenuAll > p {
-     
-    font-size: 14px;
-  
-    
-}
-.newMenuTxt {
-
-
-
-width: 110px;
-
-
-}
-
-.newMenuTxt img {
-    width: 110px;
-}
-
-#newMenuAll p {
-    font-size: 10px;
-}
-
-}
+        @media (max-width: 520px) {
+            .grid-container { 
+              grid-template-columns: auto auto;
+              width: 260px;
+            }
+            #titleMenu {
+                width: 260px;          
+            }
+            .nav {
+                justify-content: center;     
+                padding: 0px;
+                padding-top: 15px;      
+            }
+            .paragraf {
+            padding: 0;
+            margin: 0;
+            }
+            #conPasus2 {       
+            margin-top: 58vw; 
+            padding: 10px; 
+            }
+            #newMenuAll > p {     
+            font-size: 14px;    
+            }
+            .newMenuTxt {
+            width: 110px;
+            }
+            .newMenuTxt img {
+            width: 110px;
+            }
+            #newMenuAll p {
+            font-size: 10px;
+            }
+            .pasus10 { font-size:9px!important;}
+            .pasus11 {
+            font-size: 8px!important;
+            }
+            }
