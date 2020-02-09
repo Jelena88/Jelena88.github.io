@@ -5,17 +5,24 @@ body {
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-  #main3, #main2, #main1 {
+  #main3, #main2{
   background-image: url('bg3.png');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0px;
   padding: 0px;
   margin: 0px auto; 
+
  }
 /* Home page */
 #main1 {
-    background-image: url('bg1.png');}
+    background-image: url('bg1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin: 0px auto; 
+    }
 .nav {
     display: flex;
     justify-content: flex-end;
