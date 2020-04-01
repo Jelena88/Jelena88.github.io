@@ -1,0 +1,360 @@
+body {
+    margin: 0px;
+    background-color: rgb(255, 249, 240)
+}
+
+#dest {
+    background-color: rgb(255, 249, 240);
+    height: auto;
+}
+
+#title {
+    background-image: url(2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: rgb(255, 249, 240);
+    z-index: 11;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+#title h3 {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+}
+
+#title h2 {
+    padding-bottom: 0%;
+}
+
+img {
+    margin: 0px;
+    width: 230px;
+    height: 150px;
+    float: right;
+}
+
+h2 {
+    font-family: 'Marcellus SC', serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin: 0px;
+    padding: 4% 0% 0.5% 0%;
+}
+
+#page {
+    letter-spacing: 1px;
+    color: rgb(65, 65, 65);
+}
+
+#center {
+    width: 66vw;
+    margin: 0 auto;
+}
+
+.par {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    -webkit-padding-start: 0;
+}
+
+/* navbar ------------------------------------------------------------------------------------ */
+nav {
+    text-align: end;
+    flex-grow: 1;
+    z-index: 10;
+}
+
+.flt {
+    float: left;
+    font-size: 35px;
+    text-align: start;
+    flex-grow: 1;
+    padding-left: 1%;
+}
+
+nav a {
+    margin: 0px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(65, 65, 65);
+}
+
+.hdr div {
+    clear: both;
+}
+
+#navbar {
+    background: rgb(255, 249, 240);
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    height: 30px;
+}
+
+#menu li {
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#menu li:hover,
+.active {
+    background: rgb(235, 230, 189);
+    transition: 1000ms;
+    cursor: pointer;
+}
+
+#menu li:nth-child(4) {
+    position: relative;
+}
+
+#padajuci-meni {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(255, 249, 240);
+    z-index: 11;
+    width: 100%;
+}
+
+#padajuci-meni li {
+    font-size: 1em;
+    background-color: rgb(255, 249, 240);
+    padding-bottom: 6%;
+    padding-top: 3%;
+}
+
+#menu li:nth-child(4):hover #padajuci-meni {
+    display: block;
+}
+
+#menu>li>a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#padajuci-meni li a {
+    display: block;
+}
+
+#padajuci-meni li {
+    margin: 0px;
+}
+
+ul i {
+    height: 30px;
+    width: 30px;
+}
+
+#hamb {
+    display: none;
+}
+
+.handFont {
+    font-family: 'Kristi', cursive;
+    font-size: 35px;
+}
+
+h1,
+h2,
+h3,
+nav {
+    font-family: 'Marcellus SC', serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+#copy {
+    letter-spacing: 2px;
+    margin: 0px;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer {
+    clear: both;
+}
+
+select {
+    padding: 8px 5px;
+    margin: 5px;
+    border-color: rgb(94, 94, 94);
+}
+
+.hotel {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.hotels {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hotel div {
+    display: flex;
+    flex-direction: row;
+}
+
+.All h3 {
+    font-size: larger;
+    text-align: center;
+}
+
+h4 {
+    margin: 5px;
+}
+
+h4 a {
+    color: rgb(122, 178, 185);
+    text-decoration: none;
+}
+
+h4 a:hover {
+    color: rgb(65, 65, 65);
+    transition: 1000ms;
+}
+
+.all h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 1440px) {
+    nav a {
+        font-size: 1vw
+    }
+
+    .flt {
+        font-size: 2vw;
+    }
+
+    #title h2 {
+        font-size: 2vw;
+    }
+
+    #title h3 {
+        font-size: 1.5vw;
+    }
+
+    .left p,
+    .right p {
+        font-size: 1.3vw;
+    }
+
+    #copy {
+        font-size: 20px;
+    }
+
+    img {
+        width: 300px;
+        height: 200px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .All h3 {
+        font-size: x-large;
+        text-align: center;
+    }
+
+    select {
+        width: 330px;
+        padding: 12px 10px;
+        font-size: 18px;
+    }
+
+    .All h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    nav a {
+        font-size: 12px;
+        padding-left: 1px;
+        padding-right: 1px;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #menu li {
+        height: 40px;
+        background-color: rgb(255, 249, 240);
+    }
+
+    #padajuci-meni li {
+        height: 25px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        background-color: rgb(248, 239, 226);
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    #hamb {
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+
+    #menu {
+        top: 30px;
+        flex-direction: column;
+        position: relative;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    .flt {
+        font-size: 28px;
+        padding-top: 5px;
+    }
+
+    #center {
+        width: 80vw
+    }
+
+}

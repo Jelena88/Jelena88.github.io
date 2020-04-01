@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kristi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="work.css">
+    <script async src="work.js"></script>
+    <title>Where To Find Me</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <!--navbar  --------------------------------------------------------------------------------->
+        <span class="handFont flt">Where to Find Me</span>
+        <nav>
+            <ul id="menu">
+                <li> <a href="index.html">HOME</a></li>
+                <li> <a href="aboutUs.html">ABOUT US</a></li>
+                <li> <a href="dest.html">DESTINATIONS</a></li>
+                <li> <a href="" class="dropbtn">REVIEWS&#9660;</a>
+                    <ul id="padajuci-meni">
+                        <li> <a href="rew20.html">2020</a> </li>
+                        <li> <a href="rew19.html">2019</a></li>
+                    </ul>
+                </li>
+                <li><a href="work.html" class="active">WORK TOGETHER</a></li>
+                <li> <a href="index.html#section4">SUBSCRIBE&CONTACT</a></li>
+            </ul>
+            <div id="hamb">
+                <a href="javascript:void(0);" class="icon-menu" onclick="displayBar(m)">
+                    <i class="fa fa-bars fa-2x"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <section id="work">
+        <div id="title">
+            <h2>WORK WITH US</h2>
+            <h3>SEND US A MESSAGE</h3>
+        </div>
+        <form action="">
+            <div id="container">
+                <div>
+                    <div>
+                        <input type="text" id="username" name="username" placeholder="FIRST NAME">
+                    </div>
+                    <div>
+                        <input type="text" id="lastName" name="lastName" placeholder="LAST NAME">
+                    </div>
+                    <div class="red">
+                        <div class="row1">
+                            <label for="date">Enter Date of Birth</label>
+                        </div>
+                        <div>
+                            <select name="date" id="day">
+                            </select>
+                            <select name="date" id="month">
+                                <option selected>Month</option>
+                                <option value="Januar">January</option>
+                                <option value="Februar">February</option>
+                                <option value="Mart">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="Septembar">Septembar</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                            </select>
+                            <select name="date" id="year">
+                            </select>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="red">
+                        <div class="row1">
+                            <label for="gender">Gender</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="radio" name="gender" value="Male">
+                            <label for="gender">Male</label>
+                            <input type="radio" class="radio" name="gender" value="Female">
+                            <label for="gender">Female</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <select name="country" id="country">
+                        </div>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="E-MAIL">
+                    </div>
+                    <div>
+                        <input type="phone" id="phone" name="phone" placeholder="PHONE">
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="ENTER YOUR MESSAGES"></textarea>
+                    <div id="btn">
+                        <input type="submit" value="SEND">
+                        <input type="reset" name="" id="" value="RESET">
+                    </div>
+        </form>
+        </div>
+    </section>
+    <footer>
+        <p id="copy"><small>&copy 2020 WHERE TO FIND ME. BUILD BY JELENA.</small></p>
+    </footer>
+
+</body>
+
+</html>

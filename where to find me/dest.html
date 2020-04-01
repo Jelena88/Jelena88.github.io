@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kristi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="dest.css">
+    <script async src="dest.js"></script>
+    <title>Where To Find Me</title>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <!--navbar  --------------------------------------------------------------------------------->
+        <span class="handFont flt">Where to Find Me</span>
+        <nav>
+            <ul id="menu">
+                <li> <a href="index.html">HOME</a></li>
+                <li> <a href="aboutUs.html">ABOUT US</a></li>
+                <li> <a href="dest.html" class="active">DESTINATIONS</a></li>
+                <li> <a href="" class="dropbtn">REVIEWS&#9660;</a>
+                    <ul id="padajuci-meni">
+                        <li> <a href="rew20.html">2020</a> </li>
+                        <li> <a href="rew19.html">2019</a></li>
+                    </ul>
+                </li>
+                <li><a href="work.html">WORK TOGETHER</a></li>
+                <li> <a href="index.html#section4">SUBSCRIBE&CONTACT</a></li>
+            </ul>
+            <div id="hamb">
+                <a href="javascript:void(0);" class="icon-menu" onclick="displayBar(m)">
+                    <i class="fa fa-bars fa-2x"></i>
+                </a> </div>
+        </nav>
+    </div>
+    <section id="dest">
+        <div id="title">
+            <h2>UNIQUE LOCATIONS</h2>
+            <h3> Each accommodation in our collection is hand picked, one-of-a-kidn, and offers unforgettable
+            </h3>
+        </div>
+        <div id="center">
+            <div id="page">
+                <select name="" id="select" onchange="select()">
+                    <option value="none" selected disabled hidden>Select country:</option>
+                    <option value="All">All</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Greece">Greece</option>
+                </select>
+                <section class="All">
+                    <div class="Italy all">
+                        <h2>Italy</h2>
+                        <hr>
+                        <h3>Rome </h3>
+                        <div class="hotels">
+                            <div class="hotel">
+                                <div><img src="I-hotel-2.jpg" alt=""></div>
+                                <div>
+                                    <h4><a href="">Roma Hotel</a></h4>
+                                </div>
+                            </div>
+                            <div class="hotel">
+                                <div><img src="I-hotel-1.1.jpg" alt=""></div>
+                                <div>
+                                    <h4><a href="#">Hotel Sea</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Naples</h3>
+                        <div class="hotel">
+                            <div><img src="I-hotel-3.jpg" alt=""></div>
+                            <div>
+                                <h4><a href="">Residenza San Ferdinando</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Spain all">
+                        <h2>Spain</h2>
+                        <hr>
+                        <h3>Madrird </h3>
+                        <div class="hotel"> <img src="S-hotel-1.jpg" alt="">
+                            <h4><a href="#">Occidental Madrid Este</a></h4>
+                        </div>
+                        <h3>Barcelona </h3>
+                        <div class="hotel"> <img src="S-hotel-2.jpg" alt="">
+                            <h4><a href="#">Sant Boi</a></h4>
+                        </div>
+                    </div>
+                    <div class="Greece all">
+                        <h2>Greece</h2>
+                        <hr>
+                        <h3>Athens</h3>
+                        <div class="hotel"> <img src="G-hotel-1.jpg" alt=""><a href="#">
+                                <h4><a href="#">Blue Hotel</a></h4>
+                            </a></div>
+                        <h3>Corfu </h3>
+                        <div class="hotel"> <img src="G-hotel-2.jpg" alt="">
+                            <h4> <a href="#">Marina apartmans</a></h4>
+                        </div>
+                    </div>
+                </section>
+                <p id="copy"><small>&copy 2020 WHERE TO FIND ME. BUILD BY JELENA.</small></p>
+                </footer>
+           
+</body>
+
+</html>

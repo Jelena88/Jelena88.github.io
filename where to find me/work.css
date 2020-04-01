@@ -1,0 +1,399 @@
+body {
+    margin: 0px;
+    background-color: rgb(255, 249, 240)
+}
+
+#work {
+
+    background-color: rgb(255, 249, 240);
+    height: auto;
+}
+
+#title {
+    background-image: url(2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: rgb(255, 249, 240);
+    z-index: 11;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+#title h3 {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+}
+
+#title h2 {
+    padding-bottom: 0%;
+}
+
+h2 {
+    font-family: 'Marcellus SC', serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin: 0px;
+    padding: 4% 0% 0.5% 0%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.handFont {
+    font-family: 'Kristi', cursive;
+}
+
+h1,
+h2,
+h3,
+nav {
+    font-family: 'Marcellus SC', serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+ul {
+    list-style: none;
+    -webkit-padding-start: 0;
+}
+
+/* navbar ------------------------------------------------------------------------------------ */
+nav {
+    text-align: end;
+    flex-grow: 1;
+    z-index: 10;
+}
+
+.flt {
+    float: left;
+    font-size: 35px;
+    text-align: start;
+    flex-grow: 1;
+    padding-left: 1%;
+}
+
+nav a {
+    margin: 0px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(65, 65, 65);
+}
+
+.hdr div {
+    clear: both;
+}
+
+#navbar {
+    background: rgb(255, 249, 240);
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    height: 30px;
+}
+
+#menu li {
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#menu li:hover,
+.active {
+    background: rgb(235, 230, 189);
+    transition: 1000ms;
+    cursor: pointer;
+}
+
+#menu li:nth-child(4) {
+    position: relative;
+}
+
+#padajuci-meni {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(255, 249, 240);
+    z-index: 11;
+    width: 100%;
+}
+
+#padajuci-meni li {
+    font-size: 1em;
+    background-color: rgb(255, 249, 240);
+    padding-bottom: 6%;
+    padding-top: 3%;
+}
+
+#menu li:nth-child(4):hover #padajuci-meni {
+    display: block;
+}
+
+#menu>li>a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#padajuci-meni li a {
+    display: block;
+}
+
+#padajuci-meni li {
+    margin: 0px;
+}
+
+ul i {
+    height: 30px;
+    width: 30px;
+}
+
+#hamb {
+    display: none;
+}
+
+#copy {
+    letter-spacing: 2px;
+    margin: 0px;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer {
+    clear: both;
+}
+
+input {
+    border: none;
+    padding: 10px;
+    width: 232px;
+    margin: 10px 5px 0px 5px;
+    border: solid 1px rgb(94, 94, 94);
+    margin: 5px;
+}
+
+form {
+    padding: 30px;
+}
+
+form i {
+    color: rgb(94, 94, 94);
+}
+
+#container {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+}
+
+select {
+    padding: 8px 5px;
+    margin: 5px;
+    border-color: rgb(94, 94, 94);
+    background-color: white;
+}
+
+.radio {
+    width: unset;
+}
+
+.row1 {
+    padding-bottom: 5px;
+}
+
+.row1 {
+    padding: 5px
+}
+
+.red {
+    margin: 5px 0px 2px 0px;
+}
+
+textarea {
+    width: 470px;
+    margin-top: 5px;
+    border: solid 1px rgb(94, 94, 94);
+    color: rgb(94, 94, 94);
+}
+
+#country {
+    width: 254px;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#btn input {
+    background: rgb(122, 178, 185);
+    border: none;
+    color: white;
+    padding: 12px 0px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-family: 'Marcellus SC', serif;
+}
+
+#btn input:hover {
+    background: rgb(65, 65, 65);
+    transition: 1000ms;
+}
+
+@media only screen and (min-width: 1440px) {
+    nav a {
+        font-size: 1vw
+    }
+
+    .flt {
+        font-size: 2vw;
+    }
+
+    #title h2 {
+        font-size: 2vw;
+    }
+
+    #title h3 {
+        font-size: 1.5vw;
+    }
+
+    #copy {
+        font-size: 20px;
+    }
+
+    #country {
+        width: 330px;
+        padding: 12px 10px;
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 18px;
+        padding: 15px;
+        width: 300px;
+        margin: 20px 10px 0px 10px;
+    }
+
+    form {
+        padding: 60px;
+    }
+
+    #container {
+        width: 1200px;
+    }
+
+    textarea {
+        width: 600px;
+        margin-top: 20px;
+    }
+
+    .red label {
+        font-size: 18px;
+    }
+
+    #day,
+    #month,
+    #year {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    input[type=radio] {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    nav a {
+        font-size: 12px;
+        padding-left: 1px;
+        padding-right: 1px;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #menu li {
+        height: 40px;
+        background-color: rgb(255, 249, 240);
+    }
+
+    #padajuci-meni li {
+        height: 25px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        background-color: rgb(248, 239, 226);
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    #hamb {
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+
+    #menu {
+        top: 30px;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #container {
+        width: 350px;
+    }
+
+    textarea {
+        width: 320px;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    .flt {
+        font-size: 28px;
+        padding-top: 5px;
+    }
+
+    #country {
+        width: 254px;
+    }
+
+    #container {
+        width: 320px;
+    }
+
+    textarea {
+        width: 254px;
+    }
+
+    form {
+        padding: 0;
+    }
+}

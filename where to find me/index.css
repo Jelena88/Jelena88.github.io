@@ -1,0 +1,688 @@
+body {
+    margin: 0;
+    color: rgb(65, 65, 65);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+    -webkit-padding-start: 0;
+}
+
+/* navbar ------------------------------------------------------------------------------------ */
+nav {
+    text-align: end;
+    flex-grow: 1;
+    z-index: 10;
+}
+
+.flt {
+    float: left;
+    font-size: 35px;
+    text-align: start;
+    flex-grow: 1;
+    padding-left: 1%;
+}
+
+nav a {
+    margin: 0px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(65, 65, 65);
+}
+
+.hdr div {
+    clear: both;
+}
+
+#navbar {
+    background: rgb(255, 249, 240);
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    height: 30px;
+}
+
+#menu li {
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+
+#menu li:hover,
+.active {
+    background: rgb(235, 230, 189);
+    transition: 1000ms;
+    cursor: pointer;
+}
+
+#menu li:nth-child(4) {
+    position: relative;
+}
+
+#padajuci-meni {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(255, 249, 240);
+    z-index: 11;
+    width: 100%;
+}
+
+#padajuci-meni li {
+    font-size: 1em;
+    background-color: rgb(255, 249, 240);
+    padding-bottom: 6%;
+    padding-top: 3%;
+
+
+
+}
+
+#menu li:nth-child(4):hover #padajuci-meni {
+    display: block;
+
+}
+
+#menu>li>a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#padajuci-meni li a {
+    display: block;
+
+}
+
+#padajuci-meni li {
+    margin: 0px;
+}
+
+ul i {
+    height: 30px;
+    width: 30px;
+}
+
+#hamb {
+    display: none;
+}
+
+/* -------------------------------------------------------------------------- */
+.handFont {
+    font-family: 'Kristi', cursive;
+}
+
+.handTitleS {
+    font-size: 1.8em;
+}
+
+h1,
+h2,
+h3,
+nav {
+    font-family: 'Marcellus SC', serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+h2 {
+    margin: 0px;
+    padding: 4% 4% 2.5% 4%;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: rgb(255, 249, 240);
+    padding: 0px 30px 0px 30px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+/* header conatiner ----------------------------------------------------------------- */
+.tirqCont {
+    background: rgb(122, 178, 185);
+    width: 50%;
+    margin: 32vh auto;
+    padding: 1%;
+}
+
+.tirqCont button {
+    margin-bottom: 10px;
+}
+
+.button-style-b {
+    padding: 10px;
+    background: rgb(255, 249, 240);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Marcellus SC', serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+/* header bg image -------------------------------------------------------- */
+.hdr {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.hdr button a {
+    color: rgb(65, 65, 65);
+}
+
+.hdr button:hover {
+    background-color: rgb(235, 230, 189);
+    transition: 1000ms;
+}
+
+/* section1 -------------------------------------------------------------------- */
+#section1 {
+    background-color: rgb(255, 249, 240);
+}
+
+.button-style-t {
+    padding: 2% 3%;
+    background: rgb(122, 178, 185);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Marcellus SC', serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: rgb(255, 249, 240);
+}
+
+#section1 button a {
+    color: white;
+
+}
+
+button a {
+    text-decoration: none;
+}
+
+.flexCont1 {
+    width: 90vw;
+    display: flex;
+    margin: 0 auto;
+}
+
+.flexCont1 p {
+    letter-spacing: 1px;
+}
+
+.flexCont1 div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 31%;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 40px;
+}
+
+#section1 h2 {
+    margin: 0px;
+    padding: 35px;
+}
+
+.flexCont1 img,
+.flexCont1 p {
+    width: 90%;
+}
+
+#section1 button:hover {
+    background-color: rgb(65, 65, 65);
+    transition: 1000ms;
+}
+
+/* section2 --------------------------------------*/
+#section2 {
+    background-image: url(background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+    display: flex;
+}
+
+.blueCont {
+    background: rgb(157, 214, 221);
+    width: 50%;
+    margin: 0 auto;
+    padding: 1%;
+    align-self: center;
+}
+
+.blueCont button {
+    margin-bottom: 2%;
+    color: rgb(65, 65, 65);
+}
+
+.blueCont button a {
+
+    color: rgb(65, 65, 65);
+}
+
+#section2 button:hover {
+    background-color: rgb(235, 230, 189);
+    transition: 1000ms;
+}
+
+/* section3 ------------------------------------------------ */
+#section3 {
+    background-color: rgb(255, 249, 240);
+}
+
+#section3 h2 {
+    margin: 0px;
+    padding: 35px;
+}
+
+.flexCont2 {
+    width: 80vw;
+    display: flex;
+    margin: 0 auto;
+}
+
+.flexCont2 p {
+    letter-spacing: 1px;
+}
+
+.flexCont2 div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 31%;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 40px;
+}
+
+.flexCont2 img {
+    width: 90%;
+}
+
+.flexCont2 h3 {
+    width: 80%;
+}
+
+.button-style-g {
+    padding: 2% 3%;
+    background: rgb(157, 221, 195);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Marcellus SC', serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: rgb(255, 249, 240);
+}
+
+.containerImg {
+    position: relative;
+}
+
+.text-block p {
+    margin: 0;
+}
+
+.text-block {
+    background-color: rgb(255, 237, 203);
+    padding: 2% 4%;
+    top: -0.1%;
+    left: 4.8%;
+    position: absolute;
+}
+
+#section3 button a {
+    color: white;
+}
+
+#section3 button:hover {
+    background-color: rgb(65, 65, 65);
+    transition: 1000ms;
+}
+
+/* section 4 --------------------------------------------------------------------*/
+#section4 {
+    background-color: rgb(157, 214, 221);
+}
+
+#section4 h2 {
+    padding: 40px 30px 0px 30px;
+}
+
+#section4 p {
+    letter-spacing: 1px;
+}
+
+#section4 .par {
+    margin-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+input {
+    border: none;
+    padding: 10px;
+    width: 200px;
+    margin: 10px 5px 0px 5px;
+}
+
+form {
+    padding: 30px;
+}
+
+form i {
+    color: rgb(94, 94, 94);
+}
+
+.paragraf {
+    margin: 0;
+    color: rgb(65, 65, 65);
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#section4 button {
+    padding: 9px;
+    background: rgb(255, 249, 240);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Marcellus SC', serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    width: 220px;
+    margin: 10px 5px 0px 5px;
+}
+
+#section4 button:hover {
+    background: rgb(235, 230, 189);
+    transition: 1000ms;
+}
+
+#section4 button:hover>i {
+    cursor: default;
+    transform: rotate(720deg);
+    transition: all 1s ease-in-out 0s;
+}
+
+/* footer ------------------------------------------------------------------------------------------ */
+.icon {
+    color: white;
+    border: solid rgb(157, 221, 195);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgb(157, 221, 195);
+}
+
+.icon:hover {
+    transition: 1000ms;
+    border: solid rgb(65, 65, 65);
+    background-color: rgb(65, 65, 65);
+}
+
+footer {
+    position: relative;
+    background-color: rgb(255, 249, 240);
+}
+
+footer a {
+    text-decoration: none;
+    padding: 2% 0.5% 3% 0.5%;
+}
+
+.text-scroll p {
+    margin: 0;
+}
+
+.text-scroll {
+    position: absolute;
+    bottom: 6%;
+    right: 2%;
+    background-color: white;
+    text-align: left;
+    padding: 2%;
+    cursor: pointer;
+    color: rgb(65, 65, 65);
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+}
+
+.iconsborder {
+    padding: 1%;
+}
+
+footer h3 {
+    padding: 3% 0% 3% 0%;
+    margin: 0px;
+}
+
+.footerImg {
+    width: 100%;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#grid img:hover {
+    filter: opacity(50%);
+    transition: 500ms;
+}
+
+#copy {
+    letter-spacing: 2px;
+    margin: 0px;
+    padding-bottom: 3%;
+    font-size: 12px;
+}
+
+#copy p {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@media only screen and (min-width: 1440px) {
+    p {
+        font-size: 1vw;
+    }
+
+    nav a {
+        font-size: 1vw
+    }
+
+    .flt {
+        font-size: 2vw;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.4vw;
+    }
+
+    h3 {
+        font-size: 1.1vw;
+    }
+
+    button a {
+        font-size: 0.8vw;
+    }
+
+    #copy {
+
+        font-size: 20px;
+
+
+    }
+
+    .handTitleS {
+        font-size: 2vw;
+    }
+
+    input {
+        font-size: 20px;
+        padding: 16px;
+        width: 300px;
+        margin: 20px 10px 0px 10px;
+    }
+
+    form {
+        padding: 60px;
+
+    }
+
+    #section4 button {
+        padding: 14px;
+        font-size: 22px;
+
+        width: 300px;
+        margin: 0px 5px 10px 5px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    nav a {
+        font-size: 12px;
+        padding-left: 1px;
+        padding-right: 1px;
+        letter-spacing: 1px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    #grid {
+        grid-template-columns: auto auto auto;
+    }
+
+    .flexCont2 {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .flexCont1 {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 1.1em;
+    }
+
+    #section2 h2 {
+        font-size: 1.1em;
+    }
+
+    #menu li {
+        height: 40px;
+        background-color: rgb(255, 249, 240);
+    }
+
+    #padajuci-meni li {
+        height: 25px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        background-color: rgb(248, 239, 226);
+    }
+
+    nav a {
+        font-size: 15px;
+
+    }
+
+    #hamb {
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+
+    #menu {
+        top: 30px;
+        flex-direction: column;
+        position: relative;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    #grid {
+        grid-template-columns: auto auto;
+    }
+
+    .flexCont2 {
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .flexCont1 {
+        flex-direction: column;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #grid {
+        grid-template-columns: auto;
+        width: 70vw;
+    }
+
+    .flexCont1 {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .text-scroll {
+        bottom: 2%;
+        right: 2%;
+    }
+
+    .flexCont2 {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .flt {
+        font-size: 28px;
+        padding-top: 5px;
+    }
+}
