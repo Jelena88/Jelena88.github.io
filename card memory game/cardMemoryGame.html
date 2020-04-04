@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+        <div id="del-countdown">
+                <span id="clock1">Time:</span><span id="clock"></span>
+        
+            </div>
+          
+    <section class="cards">
+            <div class="cong">
+                    <div id="innerTxt"></div>
+                 <button onClick="window.location.reload();">play again</button>
+                 </div>
+        <div class="card" data-card="one">
+
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img1.png" alt="img1">
+            </div>
+        </div>
+        <div class="card" data-card="one">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img1.png" alt="img1">
+            </div>
+        </div>
+        <div class="card" data-card="two">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img2.png" alt="img2">
+            </div>
+        </div>
+        <div class="card" data-card="two">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img2.png" alt="img2">
+            </div>
+        </div>
+        <div class="card" data-card="three">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img3.png" alt="img3">
+            </div>
+        </div>
+        <div class="card" data-card="three">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img3.png" alt="img3"> 
+            </div>
+        </div>
+        </div>
+        <div class="card" data-card="four">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img4.png" alt="img4">
+            </div>
+        </div>
+        <div class="card" data-card="four">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img4.png" alt="img4">
+            </div>
+        </div>
+        <div class="card" data-card="five">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img5.png" alt="img5">
+            </div>
+        </div>
+        <div class="card" data-card="five">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img5.png" alt="img5">
+            </div>
+        </div>
+        <div class="card" data-card="six">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img6.png" alt="img6">
+            </div>
+        </div>
+        <div class="card" data-card="six">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img6.png" alt="img6">
+            </div>
+        </div>
+        <div class="card" data-card="seven">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img7.png" alt="img7">
+            </div>
+        </div>
+        <div class="card" data-card="seven">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img7.png" alt="img7"></div>
+        </div>
+
+        <div class="card" data-card="eight">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img8.png" alt="img8">
+            </div>
+        </div>
+        <div class="card" data-card="eight">
+            <div class="face">
+                <img class="back " src="img.png" alt="img">
+            </div>
+            <div>
+                <img class="front " src="img8.png" alt="img8">
+            </div>
+        </div>
+    </section>
+</body>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    .cards {
+        width: 440px;
+        height: 540px;
+        border: 2px black solid;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        perspective: 1000px;
+        align-items: center;
+
+    }
+
+    .card {
+
+        height: 23%;
+        width: 22.3%;
+        position: relative;
+        margin: 5px;
+        transform: scale(1);
+        transform-style: preserve-3d;
+        transition: transform .5s;
+    }
+
+    .card:active {
+        transform: scale(.97);
+        transition: transform .2s;
+    }
+
+    .card.flip {
+        transform: rotateY(180deg);
+    }
+
+    .face {
+        position: absolute;
+        z-index: 11;
+        backface-visibility: hidden;
+    }
+
+    .front {
+        transform: rotateY(180deg);
+        }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cong {
+     font-size: 40px;
+position: absolute;
+z-index: 20;
+text-align: center;
+background-color: rgb(115, 155, 115);
+padding: 20px;
+display: none;
+
+    }
+
+    button {
+        padding: 10px;
+        background: coral;
+        font-size: 20px;
+        border: rgb(187, 121, 0) solid 1px;
+        cursor: pointer;
+    }
+    button:hover {
+        background:  rgb(255, 161, 127);
+        transition: 1000ms;
+    }
+    #clock, #clock1 {
+        font-size: 40px;
+      text-align: center;
+      padding: 10px;
+    }
+    #del-countdown {
+ display: flex;
+width: 300px;
+  
+      text-align: center;
+      padding: 10px;
+margin: 0 auto;
+  justify-items: center;
+    justify-content: center;
+    }
+</style>
+<script>
+
+    var cards = document.querySelectorAll('.card')
+let hasFlippedCard = false;
+let lockBoard = false
+let firstCard;
+let secondCard
+
+    function flipCard() {
+      
+if (lockBoard) return;
+        this.classList.add('flip')
+     
+     if (!hasFlippedCard) {
+         hasFlippedCard = true;
+         firstCard = this;
+         return;
+     } else {
+         hasFlippedCard = false;
+         secondCard = this;
+         console.log(firstCard.dataset.card)
+         console.log(secondCard.dataset.card)
+
+         checkForMatch()
+
+     }
+    
+    }var sum = 0
+function checkForMatch() {
+
+    if (firstCard.dataset.card === secondCard.dataset.card)
+    {
+        disableCards()
+        sum+=1
+     console.log(sum)
+     if (sum == 8) {
+        clearInterval(timer);
+       var time = document.querySelector('#clock').innerText;
+       document.querySelector('.cong').style.display = "block"
+      document.querySelector('#innerTxt').innerText = `Congratulations, your time is: ${time}`
+     }
+    }else {
+        unflipCards()
+     
+    }
+}
+
+function disableCards() {
+    firstCard.removeEventListener('click', flipCard);
+        secondCard.removeEventListener('click', flipCard);
+}
+
+function unflipCards() {  
+    lockBoard = true
+
+     setTimeout(() => {
+
+            firstCard.classList.remove('flip');
+            secondCard.classList.remove('flip')
+
+            lockBoard = false
+        }, 1200)
+
+}
+
+(function shuffle() {
+    cards.forEach(card =>{
+        let random = Math.floor(Math.random()*16);
+
+        card.style.order = random
+    })
+})()
+    cards.forEach(card => card.addEventListener('click', flipCard))
+
+
+    const clock = document.getElementById('clock');
+        let broj = 00;
+
+    
+        document.querySelector('.cards').addEventListener('click', setTime)
+        function countD() {
+            var minutes = Math.floor(broj / 60);
+            var seconds = broj % 60;
+       
+                clock.innerHTML = `${minutes}:${seconds}`;}
+        
+             
+                
+            var timer;
+
+function setTime() {
+
+    timer = setInterval(() => {
+            countD(); 
+            broj++
+
+            
+
+   
+        }
+            , 1000);
+                    
+   
+       
+ 
+            document.querySelector('.cards').removeEventListener('click', setTime)
+
+            }
+     
+    
+            
+
+          
+        
+</script>
+
+</html>
