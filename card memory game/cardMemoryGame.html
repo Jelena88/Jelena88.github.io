@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
     <title>Document</title>
 </head>
 
 <body>
+    <div id="memory">
+    <p>Memory Card Game</p></div>
         <div id="del-countdown">
                 <span id="clock1">Time:</span><span id="clock"></span>
         
@@ -19,7 +22,7 @@
                     <div id="innerTxt"></div>
                  <button onClick="window.location.reload();">play again</button>
                  </div>
-        <div class="card" data-card="one">
+        <div class="card" data-card="one" id="first">
 
             <div class="face">
                 <img class="back " src="img.png" alt="img">
@@ -28,7 +31,7 @@
                 <img class="front " src="img1.png" alt="img1">
             </div>
         </div>
-        <div class="card" data-card="one">
+        <div class="card" data-card="one" id="second">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -36,7 +39,7 @@
                 <img class="front " src="img1.png" alt="img1">
             </div>
         </div>
-        <div class="card" data-card="two">
+        <div class="card" data-card="two"  id="third">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -44,7 +47,7 @@
                 <img class="front " src="img2.png" alt="img2">
             </div>
         </div>
-        <div class="card" data-card="two">
+        <div class="card" data-card="two"  id="fourth">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -52,7 +55,7 @@
                 <img class="front " src="img2.png" alt="img2">
             </div>
         </div>
-        <div class="card" data-card="three">
+        <div class="card" data-card="three" id="fifth">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -60,7 +63,7 @@
                 <img class="front " src="img3.png" alt="img3">
             </div>
         </div>
-        <div class="card" data-card="three">
+        <div class="card" data-card="three"  id="sixth" >
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -69,7 +72,7 @@
             </div>
         </div>
         </div>
-        <div class="card" data-card="four">
+        <div class="card" data-card="four" id="seventh">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -77,7 +80,7 @@
                 <img class="front " src="img4.png" alt="img4">
             </div>
         </div>
-        <div class="card" data-card="four">
+        <div class="card" data-card="four" id="eighth">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -85,7 +88,7 @@
                 <img class="front " src="img4.png" alt="img4">
             </div>
         </div>
-        <div class="card" data-card="five">
+        <div class="card" data-card="five" id="ninth">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -93,7 +96,7 @@
                 <img class="front " src="img5.png" alt="img5">
             </div>
         </div>
-        <div class="card" data-card="five">
+        <div class="card" data-card="five" id="tenth">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -101,7 +104,7 @@
                 <img class="front " src="img5.png" alt="img5">
             </div>
         </div>
-        <div class="card" data-card="six">
+        <div class="card" data-card="six"  id="eleventh">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -109,7 +112,7 @@
                 <img class="front " src="img6.png" alt="img6">
             </div>
         </div>
-        <div class="card" data-card="six">
+        <div class="card" data-card="six" id="twelfth">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -117,7 +120,7 @@
                 <img class="front " src="img6.png" alt="img6">
             </div>
         </div>
-        <div class="card" data-card="seven">
+        <div class="card" data-card="seven" id="thirteenth">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -125,7 +128,7 @@
                 <img class="front " src="img7.png" alt="img7">
             </div>
         </div>
-        <div class="card" data-card="seven">
+        <div class="card" data-card="seven" id="fourteenth">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -133,7 +136,7 @@
                 <img class="front " src="img7.png" alt="img7"></div>
         </div>
 
-        <div class="card" data-card="eight">
+        <div class="card" data-card="eight" id="fifteenth">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -141,7 +144,7 @@
                 <img class="front " src="img8.png" alt="img8">
             </div>
         </div>
-        <div class="card" data-card="eight">
+        <div class="card" data-card="eight" id="sixteenth">
             <div class="face">
                 <img class="back " src="img.png" alt="img">
             </div>
@@ -160,18 +163,24 @@
 
     body {
         height: 100vh;
+        font-family: 'Aldrich';font-size: 22px;
+       
     }
-
+#memory {
+    text-align: center;
+    margin: 10px;
+}
     .cards {
         width: 440px;
         height: 540px;
-        border: 2px black solid;
+ 
         display: flex;
         flex-wrap: wrap;
         margin: auto;
         justify-content: center;
         perspective: 1000px;
         align-items: center;
+     padding-top: 0.4%;
 
     }
 
@@ -184,6 +193,7 @@
         transform: scale(1);
         transform-style: preserve-3d;
         transition: transform .5s;
+  
     }
 
     .card:active {
@@ -210,20 +220,20 @@
     }
 
     .cong {
-     font-size: 40px;
+     font-size: 20px;
 position: absolute;
 z-index: 20;
 text-align: center;
-background-color: rgb(115, 155, 115);
-padding: 20px;
+background-color: #7cc8c8;
+padding: 15px;
 display: none;
 
     }
 
     button {
-        padding: 10px;
+        padding: 8px;
         background: coral;
-        font-size: 20px;
+        font-size: 15px;
         border: rgb(187, 121, 0) solid 1px;
         cursor: pointer;
     }
@@ -231,23 +241,49 @@ display: none;
         background:  rgb(255, 161, 127);
         transition: 1000ms;
     }
-    #clock, #clock1 {
-        font-size: 40px;
-      text-align: center;
-      padding: 10px;
+
+    #innerTxt {
+       padding: 10px;
+
     }
+    #clock, #clock1 {
+        font-size: 20px;
+   
+      padding: 10px;
+    
+
+
+    }
+    #clock {     width: 80px;
+
+    text-align: left;}
+
+    #clock1 {     
+        text-align: right;}
+   
     #del-countdown {
  display: flex;
-width: 300px;
-  
+
       text-align: center;
-      padding: 10px;
+      width: 320px;
 margin: 0 auto;
   justify-items: center;
     justify-content: center;
+
+padding: 0px;
     }
 </style>
 <script>
+    document.querySelector('.card').addEventListener(
+ 'dblclick', function(event) {
+  alert("Double-click disabled!");
+  event.preventDefault();
+  event.stopPropagation();
+
+ },
+ true
+
+);
 
     var cards = document.querySelectorAll('.card')
 let hasFlippedCard = false;
@@ -274,23 +310,32 @@ if (lockBoard) return;
 
      }
     
-    }var sum = 0
-function checkForMatch() {
+    }
+    
 
-    if (firstCard.dataset.card === secondCard.dataset.card)
+
+    var sum = 0
+function checkForMatch() {
+  
+if (firstCard.dataset.card === secondCard.dataset.card && firstCard.id !== secondCard.id)
+
     {
         disableCards()
         sum+=1
      console.log(sum)
+
      if (sum == 8) {
         clearInterval(timer);
        var time = document.querySelector('#clock').innerText;
        document.querySelector('.cong').style.display = "block"
       document.querySelector('#innerTxt').innerText = `Congratulations, your time is: ${time}`
-     }
-    }else {
-        unflipCards()
+     };
+   
+    }
      
+    else {
+        unflipCards()
+        console.log (firstCard.id)
     }
 }
 
@@ -331,7 +376,13 @@ function unflipCards() {
             var minutes = Math.floor(broj / 60);
             var seconds = broj % 60;
        
-                clock.innerHTML = `${minutes}:${seconds}`;}
+            if (minutes<10 && seconds<10) {
+                clock.innerHTML = `0${minutes}:0${seconds}`;}
+                else if (minutes<10 && seconds>10) {
+                    clock.innerHTML = `0${minutes}:${seconds}`
+                }
+        else if (minutes>10 && seconds<10){ clock.innerHTML = `${minutes}:0${seconds}`}
+        else if (minutes>10 && seconds>10) {clock.innerHTML = `${minutes}:${seconds}`}}
         
              
                 
@@ -356,8 +407,8 @@ function setTime() {
 
             }
      
-    
-            
+
+
 
           
         
