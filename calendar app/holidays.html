@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <title>Holiday's calendar</title>
+</head>
+<body>
+
+    <h1 class="text-center my-4  h3">Serbian Public Holidays 2020</h1>
+    <div class="d-flex justify-content-center">
+    <select name="" id="select" class="selectpicker p-1" onchange="select()">
+        <option value="none" selected disabled hidden>Select</option>
+     
+    </select></div> <br>
+    <div class="d-flex justify-content-center">
+    <h2>
+    </h2>
+    <p id="describ" class="text-center w-75"></p>
+</div>
+    
+</body>
+<style>
+@media only screen and (max-width: 450px) {
+
+    #select {
+        font-size: small;
+    }
+}
+</style>
+<script>
+
+var select= document.getElementById('select');
+var describ = document.getElementById('describ')
+
+
+const API = "https://calendarific.com/api/"
+const V = "v2"
+const HOLIDAYS = "/holidays"
+const ApiKey = "?api_key=5353dc24c8e05fa5ab955198af36aedeaa9fa454"
+
+
+
+function getAllHolidays(){
+    return fetch(`${API}${V}${HOLIDAYS}${ApiKey}&country=RS&year=2020`).then(res => res.json()).then(function(data) {var holiday = "<option selected disabled hidden>" + 'Select' + "</option>";
+        for (var i = 0; i <= data.response.holidays.length; i++) {let name = data.response.holidays[i].name;
+            
+            holiday += `<option data-data="${[i]}" >  ${data.response.holidays[i].name}  </option>`;
+    select.innerHTML = holiday;
+    
+    select.addEventListener('change', function() {
+  var dt = data.response.holidays[select.selectedIndex-1].date.iso;
+  var des = data.response.holidays[select.selectedIndex-1].description
+  // Add that data to the <p>
+    describ.innerHTML = '<b>Date: </b>' + dt + '<br> <b>Description: </b>' + des;
+})
+console.log(holiday)
+    }    
+  })
+    .catch(function(error) {
+    console.log(error);
+  });}
+
+  getAllHolidays()
+
+
+
+</script>
+
+</html>
