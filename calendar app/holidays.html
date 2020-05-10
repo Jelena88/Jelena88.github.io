@@ -61,7 +61,8 @@ function getAllHolidays(){
     select.innerHTML = holiday;
     
     select.addEventListener('change', function() {
-  var dt = data.response.holidays[select.selectedIndex-1].date.iso;
+      
+  var dt = `${data.response.holidays[select.selectedIndex-1].date.datetime.year}-${data.response.holidays[select.selectedIndex-1].date.datetime.month}-${data.response.holidays[select.selectedIndex-1].date.datetime.day}`;
   var des = data.response.holidays[select.selectedIndex-1].description
   // Add that data to the <p>
     describ.innerHTML = '<b>Date: </b>' + dt + '<br> <b>Description: </b>' + des;
