@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Students Application</title>
+</head>
+
+<body>
+
+  <!-- form -->
+  <div id="container">
+    <form id="contact">
+      <h1>Students Application</h1>
+      <fieldset>
+        <input type="text" id="name" class="input" name="name" placeholder="First name" required/>
+      </fieldset>
+      <fieldset>
+        <input type="text" id="email" class="input" name="email" placeholder="Email" required/>
+      </fieldset>
+      <fieldset>
+        <input type="number" id="age" class="input" name="age" placeholder="Age" min="0" required/>
+      </fieldset>
+      <fieldset>
+        <input type="text" id="phone" class="input" name="phone" placeholder="Phone number" required/>
+      </fieldset>
+      <fieldset>
+        <label for="communication">Preferred Way of Communication:</label> <br>
+        <input type="radio" id="emailbtn" class="input" name="communication" value="Email" required/>
+        <label for="gender">Email</label>
+        <input type="radio" id="phonebtn" class="input" name="communication" value="Phone">
+        <label for="gender">Phone</label>
+      </fieldset>
+      <fieldset>
+        <label for="english">English level</label>
+        <select name="english" id="english" required>
+          <option value=""></option>
+          <option value="Level0">No knowledge</option>
+          <option value="Level1">Elementary</option>
+          <option value="Level2">Low intermediate</option>
+          <option value="Level3">High intermediate</option>
+          <option value="Level4">Advanced</option>
+          <option value="Level5">Proficient</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="start">Avaliable to start:</label>
+        <input type="date" id="start" class="input" name="start" min="2020-07-01" required/>
+      </fieldset>
+      <fieldset>
+        <label for="skills">Tehnical skills and Courses:</label>
+        <textarea class="input" name="skills" id="skills" placeholder="Enter yout messages"></textarea>
+      </fieldset>
+      <fieldset>
+        <label for="presentation">Short personal Presentation:</label>
+        <textarea class="input" name="presentation" id="presentation" placeholder="Enter yout messages"></textarea>
+      </fieldset>
+      <fieldset>
+        <input type="checkbox" name="studyFromHome" value="yes" id="fromHome">
+        <label for="fromHome">Study from Home</label>
+      </fieldset>
+      <fieldset>
+        <button onclick="addItem()" class="button">Submit</button>
+      </fieldset>
+    </form>
+    <br><br>
+<!-- data table  -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>Phone number</th>
+          <th>Preferred Way of Communication</th>
+          <th>English level</th>
+          <th>Avaliable to start</th>
+          <th>Tehnical skills and Courses</th>
+          <th>Short personal Presentation</th>
+          <th>Study from Home</th>
+          <th>Delete application</th>
+        </tr>
+      </thead>
+      <tbody id="list-items"></tbody>
+    </table>
+</body>
+<script>
+
+  // items array that contains all todo items
+  // JSON.parse is used to parse the stringified items from localStorage
+  // if localStorage is empty, make the items variable an empty array
+  var items = JSON.parse(localStorage.getItem('todo-list')) || [];
+
+  // function to add item to the items array
+  function addItem() {
+    // get the value of the input box with querySelector
+   
+    
+    var name = document.querySelector('#name');
+    var email = document.querySelector('#email');
+    var age = document.querySelector('#age');
+    var phone = document.querySelector('#phone');
+    var radioBtn = document.querySelector('input[name="communication"]:checked');
+    var e = document.querySelector('#english')
+    var english = e.options[e.selectedIndex];
+    var start = document.querySelector('#start');
+    var skills = document.querySelector('#skills');
+    var presentation = document.querySelector('#presentation');
+    var fromHome = document.querySelector('#fromHome').checked;
+
+
+    if (fromHome == true){
+      var item = `<tr><td data-label="Name"> ${name.value}</td>
+        <td data-label="Email" class="email-word">${email.value}</td> 
+        <td data-label="Age">${age.value}</td> 
+        <td data-label="Phone number">${phone.value}</td> 
+        <td data-label="Preferred Way of Communication">${radioBtn.value}</td> 
+        <td data-label="English level">${english.text}</td> 
+        <td data-label="Avaliable to start">${start.value}</td>
+        <td data-label="Tehnical skills and Courses">${skills.value}</td> 
+        <td data-label="Short personal Presentation">${presentation.value}</td> 
+        <td data-label="Study from Home">yes</td><td data-label="Delete application" onclick='deleteItem("+ i +")'><button class='del'>delete</button></td></tr>`
+    } else {
+      var item = `<tr><td data-label="Name"> ${name.value}</td>
+      <td data-label="Email" class="email-word">${email.value}</td> 
+      <td data-label="Age">${age.value}</td>
+      <td data-label="Phone number">${phone.value}</td>
+      <td data-label="Preferred Way of Communication">${radioBtn.value}</td>
+      <td data-label="English level">${english.text}</td>
+      <td data-label="Avaliable to start">${start.value}</td>
+      <td data-label="Tehnical skills and Courses">${skills.value}</td>
+      <td data-label="Short personal Presentation">${presentation.value}</td>
+      <td data-label="Study from Home">no</td><td data-label="Delete application" onclick='deleteItem("+ i +")'><button class='del'>delete</button></td></tr>` }
+      
+    // If input is valid, add item to items array
+    items.push({
+      value: item
+    })
+
+    // then convert to a string with JSON.stringify and save to localStorage
+    localStorage.setItem('todo-list', JSON.stringify(items));
+
+    // call function to list all items
+    listItems();
+
+    // clear input box
+    // document.getElementById("contact").reset();
+  }
+
+  // function to remove item from array with Array.splice()
+  // removes item, then saves new items array to localStorage
+  function deleteItem(index) {
+    items.splice(index, 1);
+    localStorage.setItem('todo-list', JSON.stringify(items))
+    listItems();
+  }
+
+  // function that generates list of items and populates the html
+  function listItems() {
+    var list = "";
+    for (var i = 0; i < items.length; i++) {
+      list += items[i].value + " ";
+    }
+    document.querySelector("#list-items").innerHTML = list;
+  }
+
+  // function to run when page loads
+  (function () {
+    listItems();
+  })();
+
+</script>
+
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 15px;
+    color: #777;
+  }
+
+  * {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table td,
+  .table th {
+    padding: 5px 7px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .table th {
+    background-color: rgb(125, 125, 138);
+    color: #ffffff;
+  }
+
+  .table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    color: #777;
+  }
+
+  #contact {
+    background: #F9F9F9;
+    padding: 25px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+  }
+
+  #contact h1 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="number"],
+  #contact input[type="date"],
+  #contact select,
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  }
+
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="number"]:hover,
+  #contact input[type="date"]:hover,
+  #contact select:hover,
+  #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+
+  #contact button {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    background: #43A047;
+
+  }
+
+  #contact button:hover {
+    background: rgb(36, 136, 41);
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  #contact input:focus,
+  #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #888;
+  }
+
+  :-moz-placeholder {
+    color: #888;
+  }
+
+  ::-moz-placeholder {
+    color: #888;
+  }
+
+  :-ms-input-placeholder {
+    color: #888;
+  }
+
+  .del {
+    background: red;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    padding: 5px;
+  }
+
+.del:hover {
+    background: rgb(216, 73, 73);
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  /*responsive*/
+
+  @media(max-width: 768px) {
+    .email-word {
+      word-break: break-all;
+    }
+
+    .table thead {
+      display: none;
+    }
+
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+      display: block;
+      width: 100%;
+    }
+
+    .table td {
+      text-align: right;
+      padding-left: 55%;
+      text-align: right;
+      position: relative;
+      min-height: 40px;
+    }
+
+    .table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 45%;
+      padding-left: 15px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+</style>
+
+</html>
